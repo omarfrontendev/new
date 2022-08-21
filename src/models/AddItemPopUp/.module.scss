@@ -1,0 +1,32 @@
+@import "../../styles/variables.scss";
+
+.content { 
+  border-bottom: 1px solid rgb(112, 112, 112, .18);
+  padding: 15px 20px 32px;
+  row-gap: 34px;
+
+  .acc__container {
+    margin-top: 20px;
+    .acc__content {
+      padding: 25px 30px 20px;
+      row-gap: 20px;
+      max-width: 500px;
+
+      .radioItem {
+        width: 200px;
+      }
+    }
+  }
+}
+.btn {
+  width: 300px;
+  max-width: 100%;
+  padding: 17px 0;
+  margin: 0 auto;
+  .btn__content {
+    width: 100%;
+    column-gap: 8px;
+    font-size: $ft__14;
+    font-weight: $ft__w__medium;
+  }
+}
