@@ -14,6 +14,7 @@ import CancelPoup from "../models/CancelPopUp";
 import SupportPopUp from "../models/SupportPopUp";
 import AddItemPopUp from "../models/AddItemPopUp";
 import Loading from "../components/Loading";
+import Privacy from "../components/Privacy";
 
 export default function Layout({ children }) {
 
@@ -24,8 +25,9 @@ export default function Layout({ children }) {
         <MainHeader logged={true} />
         <div className={styles.app__container}>
           <div className="container__wrapper">
-            {children}
+            {/* {children} */}
             {/* <Loading /> */}
+            <Privacy />
           </div>
         </div>
         <MobFixedBar />
