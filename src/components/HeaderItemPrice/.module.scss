@@ -1,0 +1,120 @@
+@import "../../styles/variables.scss";
+
+.item__price__container {
+
+  background-color: #F9F9F9 ;
+  padding: 25px;
+  border-radius: 12px;
+
+  .item__title {
+    flex: 1.5;
+  }
+
+  .item__title {
+
+    .title {
+      color: $dark__text__color;
+      font-size: 17px;
+      font-weight: $ft__w__bold;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: #969696;
+      font-size: $ft__11;
+      font-weight: $ft__w__regular;
+    }
+  }
+
+  .item__price__content {
+    flex: 1;
+
+    .item_amount_control {
+      background-color: $pure__white;
+      border: 1px solid #E9E9E9;
+      border-radius: 12px;
+      justify-content: space-around;
+      font-size: $ft__14;
+      font-weight: $ft__w__medium;
+      color: $dark__text__color;
+      margin-right: 23px;
+      width: 94px;
+      height: 26px;
+
+      .add,
+      .remove {
+        background-color: transparent;
+        color: $main__orange;
+        border: none;
+        outline: none;
+      }
+    }
+
+    .item__price {
+
+      column-gap: 24px;
+
+      .price__word {
+        font-size: 17px;
+        font-weight: $ft__w__medium;
+        color: $dark__text__color;
+      }
+
+      .item__price {
+
+
+        .last__price {
+          color: #BDBDBD;
+          font-size: $ft__20;
+          font-weight: $ft__w__regular;
+          text-decoration: line-through;
+        }
+        .new__price {
+          color: $title__text__color;
+          font-size: $ft__20;
+          font-weight: $ft__w__bold;
+          .SAR {
+            color: $main__orange;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media(max-width: 991px) {
+  .item__price__container {
+    column-gap: 40px;
+    .item__title {
+      flex: 1;
+    }
+    .item__price__content {
+      justify-content: flex-end !important;
+    }
+  }
+}
+
+@media(max-width: 680px) {
+  .item__price__container {
+    flex-direction: column;
+    row-gap: 20px;
+    .item__title {
+      align-items: flex-start !important;
+      width: 100%;
+    }
+    .item__price__content {
+      width: 100%;
+      // justify-content: space-between !important;
+      flex-wrap: wrap;
+      row-gap: 20px;
+      .item__price {
+        column-gap: 10px;
+        .new__price,
+        .last__price {
+          font-size: 16px !important;
+        }
+      }
+    }
+  }
+}
